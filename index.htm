@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<style>
+		body{
+			margin: 0;
+		}
+		.loading{
+			background:red;
+			height:5px;
+			position:fixed;
+			top:0;
+			z-index:99999;
+		}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$('.loading').fadeOut();
+			});
+		</script>
+	</head>
+	<body>
+	<div class="loading"></div>
+	<script type="text/javascript"> $('.loading').animate({'width':'33%'},50); //第一個進度節點 </script> 
+	<script type="text/javascript"> $('.loading').animate({'width':'55%'},50); //第二個進度節點 </script> 
+	<script type="text/javascript"> $('.loading').animate({'width':'80%'},50); //第三個進度節點 </script> 
+	<script type="text/javascript"> $('.loading').animate({'width':'100%'},50); //第四個進度節點 </script>
+	</body>
+</html>
